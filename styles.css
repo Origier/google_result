@@ -1,7 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+#search_nav {
+   float: left;
+   display: flex;
+   padding: 0;
+}
+
+#settings_nav {
+   float: right;
+   display: flex;
+   padding: 0;
+}
+
+#settings_nav li a, #search_nav li a{
+   margin: 0;
+   text-align: center;
+   font-size: 13px;
+   padding: 14px;
+}
+
+#settings_nav a, #search_nav a {
+   color: rgba(0,0,0,.65);
+   text-decoration: none;
+} 
+
 #logo {
    margin: 20px;
+   position: absolute;
+   top: 0;
+}
+
+#profile_nav {
+   display: flex;
+   position: absolute;
+   top: 0;
+   right: 10px;
+   align-items: center;
+   margin-top: 7px;
+}
+
+#profile_nav img:hover {
+   opacity: 1;
+}
+
+#profile_nav li {
+   margin: 10px;
 }
 
 .apps_icon, .notification_icon {
@@ -15,6 +58,11 @@
    height: auto;
    opacity: .6;
    border-radius: 50%;
+}
+
+#search_nav li .active {
+   color: blue;
+   border-bottom: solid 3px blue;
 }
 
 .blue_text {
@@ -37,19 +85,19 @@
    color: black;
 }
 
-body {
-   font-family: Lato, sans-serif;
-}
-
 .search_bar {
    box-shadow: 0 0.1em .3em #E3E0E0;
    width: 600px;
    height: 40px;
    border: solid 1px #E3E0E0;
    background-color: white;
-   position: absolute;
-   top: 25px;
+   position: relative;
    left: 150px;
+   top: 20px;
+}
+
+.nav_bar {
+   margin-bottom: 35px;
 }
 
 .search_bar:hover {
@@ -80,9 +128,19 @@ header {
    position: absolute;
    top: 0;
    width: 100%;
-   background-color: rgba(0,0,0,.05);
+   background-color: rgba(0,0,0,.02);
+   border-bottom: solid 1px rgba(0,0,0,.1);
 }
 
 main {
    margin-top: 500px;
+}
+
+ul {
+   list-style-type: none;
+}
+
+body {
+   font-family: Lato, sans-serif;
+   margin: 0;
 }

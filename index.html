@@ -8,8 +8,8 @@
    </head>
    <body>
       <header>
-         <h1 id="logo"><span class="blue_text">G</span><span class="red_text">o</span><span class="yellow_text">o</span><span class="blue_text">g</span><span class="green_text">l</span><span class="red_text">e</span></h1>
-         <div>
+         <div class="nav_bar">
+            <h1 id="logo"><span class="blue_text">G</span><span class="red_text">o</span><span class="yellow_text">o</span><span class="blue_text">g</span><span class="green_text">l</span><span class="red_text">e</span></h1>
             <div class="search_bar">
                <form action="#">
                   <input type="text" name="search" class="search">
@@ -17,18 +17,22 @@
                <a href="#"><img src="images/google mic.png" alt="Search by Voice"></a>
                <a href="#"><img src="images/google magnifying glass.png" alt="Search"></a>
             </div>
-            <ul>
-               <li><a href="#">All</a></li>
+         </div>
+         <div>
+            <ul id="search_nav">
+               <li><a href="#" class="active">All</a></li>
                <li><a href="#">News</a></li>
                <li><a href="#">Videos</a></li>
                <li><a href="#">Shopping</a></li>
                <li><a href="#">Maps</a></li>
                <li><a href="#">More</a></li>
+            </ul>
+            <ul id="settings_nav">
                <li><a href="#">Settings</a></li>
                <li><a href="#">Tools</a></li>
             </ul>
          </div>
-         <ul>
+         <ul id="profile_nav">
             <li><a href="#"><img src="images/google apps icon.png" class="apps_icon"></a></li>
             <li><a href="#"><img src="images/google notification icon.png" class="notification_icon"></a></li>
             <li><a href="#"><img src="images/google profile icon.png" class="profile_icon"></a></li>
