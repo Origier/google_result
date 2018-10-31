@@ -1,0 +1,16 @@
+
+
+
+
+.apps_icon, .notification_icon {
+   width: 25px;
+   height: auto;
+   opacity: .6;
+}
+
+.profile_icon {
+   width: 45px;
+   height: auto;
+   opacity: .6;
+   border-radius: 50%;
+}
